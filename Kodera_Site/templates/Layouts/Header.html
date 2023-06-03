@@ -5,11 +5,11 @@
         <div class="container">
             <div class="header-navbar">
                 <div class="header-logo">
-                    <a href="index-1.html"><img class="light-version-logo" src="{% static 'media/logo.svg' %}"
+                    <a href="{% url 'home' %}"><img class="light-version-logo" src="{% static 'media/logo.svg' %}"
                             alt="logo"></a>
-                    <a href="index-1.html"><img class="dark-version-logo" src="{% static 'media/logo-3.svg' %}"
+                    <a href="{% url 'home' %}"><img class="dark-version-logo" src="{% static 'media/logo-3.svg' %}"
                             alt="logo"></a>
-                    <a href="index-1.html"><img class="sticky-logo" src="{% static 'media/logo-2.svg' %}"
+                    <a href="{% url 'home' %}"><img class="sticky-logo" src="{% static 'media/logo-2.svg' %}"
                             alt="logo"></a>
                 </div>
                 <div class="header-main-nav">
@@ -18,7 +18,7 @@
                         <div class="d-block d-lg-none">
                             <div class="mobile-nav-header">
                                 <div class="mobile-nav-logo">
-                                    <a href="index-1.html">
+                                    <a href="{% url 'home' %}">
                                         <img class="light-mode" src="{% static 'media/logo-2.svg' %}" alt="Site Logo">
                                         <img class="dark-mode" src="{% static 'media/logo-3.svg' %}" alt="Site Logo">
                                     </a>
@@ -85,7 +85,7 @@
                                     <li><a href="single-blog-quote.html">Quote Post</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- End Mainmanu Nav -->

@@ -64,8 +64,8 @@
                 <div class="col-xl-5 col-lg-6">
                     <div class="contact-form-box shadow-box mb--30">
                         <h3 class="title">Get a free Keystroke quote now</h3>
-                        <form method="POST" action="https://new.axilthemes.com/demo/template/abstrak/mail.php"
-                            class="axil-contact-form">
+                        <form method="POST" class="axil-contact-form">
+                            {% csrf_token %}
                             <div class="form-group">
                                 <label>Name</label>
                                 <input type="text" class="form-control" name="contact-name">
@@ -86,6 +86,7 @@
                             <div class="form-group">
                                 <button type="submit" class="axil-btn btn-fill-primary btn-fluid btn-primary"
                                     name="submit-btn">Get Pricing Now</button>
+
                             </div>
                         </form>
                     </div>
